@@ -35,14 +35,31 @@ $faq = [
   <head>
     <meta charset="utf-8">
     <title>php-google-faq</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
       <div class="header-top">
-
+        <ul class="inline-list">
+          <li><a class="grey" href="#"><img src="img/google-logo.png"></a></li>
+          <li class="privacy"><a class="grey" href="#">Privacy e Termini</a></li>
+        </ul>
       </div>
       <div class="header-bottom">
-
+        <div class="header-bottom-left">
+          <ul class="inline-list space-between">
+            <li><a class="grey" href="#">Introduzione</a></li>
+            <li><a class="grey" href="#">Norme sulla privacy</a></li>
+            <li><a class="grey" href="#">Termini di servizio</a></li>
+            <li><a class="grey" href="#">Tecnologie</a></li>
+            <li><a class="grey" href="#">Domande frequenti</a></li>
+          </ul>
+        </div>
+        <div class="header-bottom-right">
+          <ul class="inline-list flex-end">
+            <li><a class="grey" href="#">Account google</a></li>
+          </ul>
       </div>
     </header>
     <main>
