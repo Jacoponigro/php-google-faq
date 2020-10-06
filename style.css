@@ -18,6 +18,11 @@ a {
   color: #5f6368;
   font-weight: 600;
 }
+.light-grey {
+  color: rgba(61,61,61,.8);
+  font-size: 11px;
+  font-weight: 300;
+}
 .space-between {
   justify-content: space-between;
 }
@@ -72,3 +77,19 @@ header {
   padding-top: 20px;
 }
 /* / main */
+/* footer */
+footer {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  height: 100px;
+
+}
+.footer-left {
+  width: 25%;
+}
+.footer-right {
+  width: 75%;
+}
+
+/* / footer */

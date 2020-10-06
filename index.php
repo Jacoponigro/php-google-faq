@@ -40,13 +40,16 @@ $faq = [
   </head>
   <body>
     <header>
+      <!-- header top -->
       <div class="header-top">
         <ul class="inline-list">
           <li><a class="grey" href="#"><img src="img/google-logo.png"></a></li>
           <li class="privacy"><a class="grey" href="#">Privacy e Termini</a></li>
         </ul>
       </div>
+      <!-- header bottom -->
       <div class="header-bottom">
+        <!-- header-bottom-left -->
         <div class="header-bottom-left">
           <ul class="inline-list space-between">
             <li><a class="grey" href="#">Introduzione</a></li>
@@ -56,6 +59,7 @@ $faq = [
             <li><a class="grey" href="#">Domande frequenti</a></li>
           </ul>
         </div>
+        <!-- header-bottom-right -->
         <div class="header-bottom-right">
           <ul class="inline-list flex-end">
             <li><a class="grey" href="#">Account google</a></li>
@@ -65,12 +69,32 @@ $faq = [
     <hr>
     <main>
       <div class="main-container">
+        <!-- print in php -->
         <?php foreach ($faq as $faqq) {?>
             <h2 class="question"><?php echo $faqq["question"];?></h2><br>
             <h4 class="answer"><?php echo $faqq["answer"];?></h4><br><br>
         <? }?>
+        <!-- / print in php -->
       </div>
-
     </main>
+    <footer>
+      <div class="footer-left">
+        <ul class="inline-list space-between">
+          <li><a class="light-grey" href="#">Google</a></li>
+          <li><a class="light-grey"href="#">Tutto su Google</a></li>
+          <li><a class="light-grey"href="#">Privacy</a></li>
+          <li><a class="light-grey"href="#">Termini</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <select class="language">
+        <option>Italiano</option>
+        <option>Deutusche</option>
+        <option>English</option>
+        <option>Francais</option>
+        <option>Espanol</option>
+      </select>
+      </div>
+    </footer>
   </body>
 </html>
